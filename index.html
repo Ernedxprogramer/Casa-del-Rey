@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa del Rey | Tienda Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Casa del Rey">
+        <span class="brand-mark">CR</span>
+        <span>
+          <strong>Casa del Rey</strong>
+          <small>Tienda Premium</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navegacion principal">
+        <a href="#productos">Productos</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <button class="cart-toggle" id="cartToggle" type="button" aria-label="Abrir carrito">
+        <span class="cart-icon" aria-hidden="true">Cart</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-content">
+          <p class="eyebrow">Nueva coleccion disponible</p>
+          <h1>Compra productos seleccionados con estilo, rapidez y confianza.</h1>
+          <p class="hero-copy">
+            Una tienda moderna para descubrir piezas atractivas, agregarlas al carrito y finalizar tu pedido directo por WhatsApp.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#productos">Ver productos</a>
+            <a class="secondary-link" href="https://wa.me/5351155222" target="_blank" rel="noopener">Contactar</a>
+          </div>
+        </div>
+
+        <div class="hero-showcase" aria-label="Productos destacados">
+          <a class="showcase-card large" href="https://instagram.com/jco_075" target="_blank" rel="noopener" aria-label="Abrir Instagram de Casa del Rey">
+            <span>Premium</span>
+            <strong>@jco_075</strong>
+          </a>
+          <div class="showcase-card accent">
+            <span>Envio</span>
+            <strong>Rapido</strong>
+          </div>
+          <div class="showcase-card dark">
+            <span>Pedidos</span>
+            <strong>WhatsApp</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits" id="beneficios" aria-label="Beneficios">
+        <article>
+          <span>01</span>
+          <h2>Seleccion cuidada</h2>
+          <p>Productos pensados para clientes que buscan calidad, presencia y buen precio.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h2>Compra simple</h2>
+          <p>Agrega al carrito, revisa cantidades y envia el pedido completo por WhatsApp.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h2>Atencion directa</h2>
+          <p>El proceso termina en una conversacion real para confirmar disponibilidad y entrega.</p>
+        </article>
+      </section>
+
+      <section class="products-section" id="productos">
+        <div class="section-heading">
+          <p class="eyebrow">Catalogo</p>
+          <h2>Productos destacados</h2>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section class="contact-band" id="contacto">
+        <div>
+          <p class="eyebrow">Listo para ordenar</p>
+          <h2>Tu compra se confirma por WhatsApp.</h2>
+        </div>
+        <a class="primary-link" href="https://wa.me/5351155222" target="_blank" rel="noopener">Escribir ahora</a>
+      </section>
+    </main>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Carrito de compra">
+      <div class="cart-panel">
+        <div class="cart-header">
+          <div>
+            <p class="eyebrow">Tu pedido</p>
+            <h2>Carrito</h2>
+          </div>
+          <button class="icon-button" id="closeCart" type="button" aria-label="Cerrar carrito">×</button>
+        </div>
+
+        <div class="cart-items" id="cartItems"></div>
+
+        <div class="cart-footer">
+          <div class="cart-total">
+            <span>Total</span>
+            <strong id="cartTotal">$0</strong>
+          </div>
+          <a class="checkout-button disabled" id="checkoutButton" href="#" target="_blank" rel="noopener">
+            Comprar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>
