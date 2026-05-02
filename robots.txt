@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ernedxprogramer.github.io/Casa-del-Rey/sitemap.xml
